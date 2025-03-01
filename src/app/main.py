@@ -9,6 +9,7 @@ app = FastAPI(
 
 @app.get("/")
 async def root():
+    raise Exception("This is a test exception")
     return {"message": "Hello World"}
 
 
