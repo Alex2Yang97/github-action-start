@@ -17,6 +17,10 @@ async def greet(name: str):
     return {"message": f"Hello, {name}!"}
 
 
+async def get_user(user_id: int):
+    return {"id": user_id, "name": "John Doe"}
+
+
 if __name__ == "__main__":
     import uvicorn
 
