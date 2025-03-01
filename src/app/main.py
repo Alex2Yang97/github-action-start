@@ -17,6 +17,7 @@ async def greet(name: str):
     return {"message": f"Hello, {name}!"}
 
 
+@app.get("/users/{user_id}")
 async def get_user(user_id: int):
     return {"id": user_id, "name": "John Doe"}
 
